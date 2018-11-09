@@ -1,51 +1,9 @@
-import React from 'react'
-// import * as BooksAPI from './BooksAPI'
-import './App.css'
+import React from 'react';
 
-//Importing route in the root which is this file App.js
-import { Route} from 'react-router-dom'
-
-//Importing components from the Components folder
-import MainPage from './Components/Pages/MainPage';
-import SearchPage from './Components/Pages/SearchPage';
-
-class BooksApp extends React.Component {
-   render() {
-    // Creating components to be mounted 
-    return (
-      <div>
-        <Route exact path= "/" component= { MainPage } />
-        <Route exact path= "/search" component= { SearchPage } />
-      </div>
-    );
-
-    //The route for the SearchPage
-    return (
-      <div className="app">
-        {this.state.showSearchPage ? (
-          <div className="search-books">
-            <div className="search-books-bar">
-              <a className="close-search" onClick={() => this.setState({ showSearchPage: false })}>Close</a>
-              <div className="search-books-input-wrapper">
-                {/*
-                  NOTES: The search from BooksAPI is limited to a particular set of search terms.
-                  You can find these search terms here:
-                  https://github.com/udacity/reactnd-project-myreads-starter/blob/master/SEARCH_TERMS.md
-
-                  However, remember that the BooksAPI.search method DOES search by title or author. So, don't worry if
-                  you don't find a specific author or title. Every search is limited by search terms.
-                */}
-                <input type="text" placeholder="Search by title or author"/>
-
-              </div>
-            </div>
-            <div className="search-books-results">
-              <ol className="books-grid"></ol>
-            </div>
-          </div>
-        ) : (
-          //The route for the MainPage. It is copied and pasted into the MainPage component
-          <div className="list-books">
+class MainPage extends React.Component {
+    render() {
+        return (
+            <div className="list-books">
             <div className="list-books-title">
               <h1>MyReads</h1>
             </div>
@@ -203,11 +161,9 @@ class BooksApp extends React.Component {
             <div className="open-search">
               <a onClick={() => this.setState({ showSearchPage: true })}>Add a book</a>
             </div>
-          </div>
-        )}
-      </div>
-    )
-  }
+        );
+    }
 }
 
-export default BooksApp
+export default MainPage; // This is done to ensure what is returned in the
+//class above displays on the webpage. If not, an error message displays instead
