@@ -38,7 +38,8 @@ A starter template for the final assessment project for Udacity's React Fundamen
 
 ## Reference
 * Slack Community
-* https://www.youtube.com/watch?v=acJHkd6K5kI&=&feature=youtu.be
+* Webinar: MyReads (P6 LONG) Sept-22 walk-thru with @RyanWaite.ProjectCoach [FEND, MWS] - YouTube 
+https://www.youtube.com/watch?v=acJHkd6K5kI&=&feature=youtu.be
 
 Remember that good React design practice is to create new JS files for each component and use import/require statements to include them where they are needed.
 
