@@ -80,11 +80,11 @@ class SearchPage extends React.Component {
           </div>
         </div>
         <div className="search-books-results">
-          <ol className="books-grid" />
-          {this.state.results &&
-            this.state.results.map(book => {
-              return <Book book={book} />;
-            })}
+          <ol className="books-grid">
+          {
+            this.state.results.map((book, key) => <Book updateBook={this.updateBook} /* Passing the updateBook method from the shelf to the books */ book={book} key={key}/>)
+            }
+          </ol>
         </div>
       </div>
     );

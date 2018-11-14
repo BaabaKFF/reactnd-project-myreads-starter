@@ -9,8 +9,6 @@ import MainPage from './Components/Pages/MainPage';
 import SearchPage from './Components/Pages/SearchPage';
 
 class BooksApp extends React.Component {
-
-
    render() {
     // Creating components to be mounted 
     return (
