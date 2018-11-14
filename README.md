@@ -9,7 +9,7 @@ To view the website:
 * Install all project dependencies with `npm install`
 * Start the development server with `npm start`
 
-## How Icreated The App
+## How I Created The App
 
 * installed all project dependencies with `npm install`
 * started the development server with `npm start`
