@@ -2,8 +2,14 @@
 
 A starter template for the final assessment project for Udacity's React Fundamentals course was provided. The goal of this template is to save time by providing a static example of the CSS and HTML markup that may be used, but without any of the React code that is needed to complete the project. I added interactivity to the app by refactoring the static code in this template.
 
+## How to View The App
 
-## What I did
+To view the website:
+
+* Install all project dependencies with `npm install`
+* Start the development server with `npm start`
+
+## How Icreated The App
 
 * installed all project dependencies with `npm install`
 * started the development server with `npm start`
@@ -40,6 +46,7 @@ A starter template for the final assessment project for Udacity's React Fundamen
 * Slack Community
 * [Webinar: MyReads (P6 LONG) Sept-22 walk-thru with @RyanWaite.ProjectCoach [FEND, MWS] - YouTube ]
 (https://www.youtube.com/watch?v=acJHkd6K5kI&=&feature=youtu.be)
+
 
 Remember that good React design practice is to create new JS files for each component and use import/require statements to include them where they are needed.
 
