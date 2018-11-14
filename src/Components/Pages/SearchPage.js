@@ -42,7 +42,7 @@ class SearchPage extends React.Component {
         //if the query is defined and found, the results list displays the desired query
         res.forEach(b => {
           let f = this.state.books.filter(B => B.id === b.id);
-          b.shelf = f[0] ? f.shelf : null; //to represent when a book has no shelf property
+          b.shelf = f[0] ? f.shelf : "none"; //to represent when a book has no shelf property
           //console.log(f);
           if (f[0]) {
             b.shelf = f[0].shelf;
